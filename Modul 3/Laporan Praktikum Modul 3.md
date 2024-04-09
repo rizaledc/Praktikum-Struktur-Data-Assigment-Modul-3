@@ -8,6 +8,8 @@ Dengan adanya praktikum ini, penulis telah menargetkan tujuan bahwa mahasiswa da
    
 ## Dasar Teori
 
+Dalam beberapa konteks pemograman, algortima merupakan spesefikasi urutan langkah untuk melakukan pekerjaan tertentu(Panny Agustia). Penerapan algoritma ini sangat penting di dunia komputasi baik dengan data besar maupun dengan data kecil. Dengan menggunakan algoritma yang tepat, seseorang dapat mengolah data dengan efisien dan efektif. Dalam konteks sorting, algoritma ini dapat digunakan untuk mengurutkan nilai-nilai dari array sesuai urutan yang diinginkan.
+
 Kata sorting dapat didefinisikan sebagai pengurutan sejumlah data berdasarkan nilai kunci tertentu. Pengurutan dapat dilakukan dari nilai terkecil ke nilai terbesar 
 (ascending) atau sebaliknya (descending) (Wahyu Fahmy). Tujuan dari adanya sorting ini untuk mengatur data sehingga seseorang dapat mengakses datanya dengan lebih mudah dan efisien dalam memahami maupun mengolah data. Dalam pemrograman terdapat beberapa algoritma sorting yang umum digunakan diantaranya: Bubble sort, Selection sort, Insertion Sort, Merge Sort, dan Quick sort. Dalam laporan ini, penulis akan menjelaskan 3 algoritma sorting yaitu Bubble sort, Selection sort, dan Insertion sort. 
 
@@ -69,7 +71,7 @@ int main() {
 
 ### 2. Selection Sort
 
-Selection sort merupakan pengurutan dengan memilih elemen dengan nilai terkecil dari sisa array, jika telah ditemukan maka nilai tersebut akan dipindahkan ke posisi yang sesuai dengan nilainya. Proses ini akan terus berulang hingga seluruh elemen array berada pada posisi yang benar.
+Selection Sort adalah suatu Algoritma pengurutan yang membandingkan elemen yang sekarang dengan elemen berikutnya sampai ke elemen yang terakhir. Jika ditemukan elemen lain yang lebih kecil dari elemen sekarang maka dicatat posisisnya dan langsung ditukar. Konsep Selection Sort adalah mencari atau memilih nilai terkecil ataupun nilai terbesar dan menukarnya dengan elemen paling awal pada paling kiri pada setiap tahap, proses akan terus berjalan hingga data akan mengahasilkan data yang terurut(F.E Saputro dan F. N. Khasanah).
 
 Contoh dalam kehidupan sehari-hari:
 Dalam tumpukan koin dengan nilai yang berbeda-beda lalu kita ingin mengurutkan nilai dari setiap koin menggunakan selection sort. Kita dapat mengambil koin dengan nilai terkecil untuk diletakkan pada posisi paling bawah, kemudian kita dapat mencari nilai koin yang lebih kecil lagi dari sisa tumpukan lalu meletakkannya pada posisi setelahnya (kedua). Ulagi proses ini hingga urutannya sesuai.
@@ -128,7 +130,7 @@ int main() {
 
 ### Insertion Sort
 
-Insertion sort ini merupakan metode pengurutan dengan membagi elemen array menjadi dua bagian(bagian yang diurutkan dan bagian yang belum diurutkan). Algoritma ini akan memilih elemen dari bagian yang belum diurutkan lalu disisipkan ke dalam bagian yang diurutkan dalam posisi yang tepat. Elemen-elemen yang nilainya lebih besar akan bergeser ke kanan. Langkah akan terus berulang hingga semua elemen array terurutkan dengan benar.
+Insertion Sort adalah adalah sebuah algoritma pengurutan yang membandingkan dua elemen data pertama, mengurutkannya, kemudian mengecek elemen data berikutnya satu persatu dan membandingkannya dengan elemen data yang telah diurutkan(M. Arawin, 2019). Algoritma ini akan memilih elemen dari bagian yang belum diurutkan lalu disisipkan ke dalam bagian yang diurutkan dalam posisi yang tepat. Elemen-elemen yang nilainya lebih besar akan bergeser ke kanan. Langkah akan terus berulang hingga semua elemen array terurutkan dengan benar.
 
 Contoh dalam kehidupan sehari-hari:
 Kita memiliki tumpukan buku dengan judul yang berbeda-beda. Saat menggunakan insertion sort, kita akan mengambil buku satu persatu lalu menyisipkannya ke dalam tumpukan buku yang telah diurutkan sesuai dengan urutan judul buku.
@@ -820,3 +822,6 @@ int main() {
 
 ## Referensi
 
+M. Arawin, “Penerapan bubble sort dan insertion sort pada urutan mahasiswa,” 2018. 
+
+F. E. Saputro and F. N. Khasanah, “Teknik Selection Sort dan Bubble Sort Menggunakan Borland C ++,” J. Mhs. Bina Insa., vol. 2, no. 2, pp. 136–145, 2018. 
