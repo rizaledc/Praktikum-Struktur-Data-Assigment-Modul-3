@@ -10,9 +10,179 @@ Dengan adanya praktikum ini, penulis telah menargetkan beberapa tujuan diantaran
 ## Dasar Teori
 
 Kata sorting dapat didefinisikan sebagai pengurutan sejumlah data berdasarkan nilai kunci tertentu. Pengurutan dapat dilakukan dari nilai terkecil ke nilai terbesar 
-(ascending) atau sebaliknya (descending) (Wahyu Fahmy). Tujuan dari adanya sorting ini untuk mengatur data sehingga seseorang dapat mengakses datanya dengan lebih mudah dan efisien dalam memahami maupun mengolah data. Dalam pemrograman terdapat beberapa algoritma sorting yang umum digunakan diantaranya: Bubble sort, Selection sort, Insertion Sort, Merge Sort, dan Quick sort. Dalam laporan ini, penulis akan menjelaskan 3 algoritma sorting yaitu Bubble sort, Selection sort, dan 
+(ascending) atau sebaliknya (descending) (Wahyu Fahmy). Tujuan dari adanya sorting ini untuk mengatur data sehingga seseorang dapat mengakses datanya dengan lebih mudah dan efisien dalam memahami maupun mengolah data. Dalam pemrograman terdapat beberapa algoritma sorting yang umum digunakan diantaranya: Bubble sort, Selection sort, Insertion Sort, Merge Sort, dan Quick sort. Dalam laporan ini, penulis akan menjelaskan 3 algoritma sorting yaitu Bubble sort, Selection sort, dan Insertion sort. 
+
+### 1. Bubble Sort
+
+Bubble sort merupakan algoritma sederhana dimana setiap elemen-elemennya dibandingkan secara berpasangan lalu ditukarkan apabila posisi elemennya tidak berada pada urutan yang benar. Proses akan berakhir ketika semua elemen telah berada pada posisi yang benar. 
+
+Contoh dalam kehidupan sehari-hari:
+Bayangkan terdapat tumpukan kartu yang diacak urutannya. Dengan menggunakan bubble sort, kita akan membandingkan kartu-kartu yang berpasangan, dimana ketika nomor kartu berikutnya lebih kecil dari nomor kartu sebelumnya maka posisi kartu akan ditukar. Proses ini akan terus berlanjut hingga urutan kartu benar.
+
+Pseudocode:
+
+```C++
+procedure BubbleSort(A: daftar item yang dapat diurutkan)
+    n = panjang(A)
+    ulangi
+        ditukar = false
+        untuk i = 1 sampai n-1 lakukan
+            jika A[i] > A[i+1] maka
+                tukar(A[i], A[i+1])
+                ditukar = true
+            akhir jika
+        end untuk
+        n = n - 1
+    sampai tidak ada yang ditukar
+end procedure
+```
+
+Contoh code sederhana:
+
+```C++
+#include <iostream>
+using namespace std;
+
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n-1; i++) {
+        for (int j = 0; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1]) {
+                // Tukar elemen
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int arr[] = {18, 04, 05, 25, 09};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    bubbleSort(arr, n);
+    cout << "Array yang diurutkan menggunakan Bubble Sort: \n";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+    return 0;
+}
+```
+
+### 2. Selection Sort
+
+Selection sort merupakan pengurutan dengan memilih elemen dengan nilai terkecil dari sisa array, jika telah ditemukan maka nilai tersebut akan dipindahkan ke posisi yang sesuai dengan nilainya. Proses ini akan terus berulang hingga seluruh elemen array berada pada posisi yang benar.
+
+Contoh dalam kehidupan sehari-hari:
+Dalam tumpukan koin dengan nilai yang berbeda-beda lalu kita ingin mengurutkan nilai dari setiap koin menggunakan selection sort. Kita dapat mengambil koin dengan nilai terkecil untuk diletakkan pada posisi paling bawah, kemudian kita dapat mencari nilai koin yang lebih kecil lagi dari sisa tumpukan lalu meletakkannya pada posisi setelahnya (kedua). Ulagi proses ini hingga urutannya sesuai.
+
+Pseudocode:
+
+```C++
+procedure SelectionSort(A: daftar item yang dapat diurutkan)
+    n = panjang(A)
+    untuk i = 1 sampai n-1 lakukan
+        indeks_min = i
+        untuk j = i+1 sampai n lakukan
+            jika A[j] < A[indeks_min] maka
+                indeks_min = j
+            akhir jika
+        end untuk
+        jika indeks_min != i maka
+            tukar(A[i], A[indeks_min])
+        akhir jika
+    end untuk
+end procedure
+```
+
+Contoh code sederhana:
+
+```C++
+#include <iostream>
+using namespace std;
+
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i < n-1; i++) {
+        int min_index = i;
+        for (int j = i+1; j < n; j++) {
+            if (arr[j] < arr[min_index]) {
+                min_index = j;
+            }
+        }
+        // Tukar elemen
+        int temp = arr[i];
+        arr[i] = arr[min_index];
+        arr[min_index] = temp;
+    }
+}
+
+int main() {
+    int arr[] = {18, 04, 05, 25, 09};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    selectionSort(arr, n);
+    cout << "Array yang diurutkan menggunakan Selection Sort: \n";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+    return 0;
+}
+```
+
+### Insertion Sort
+
+Insertion sort ini merupakan metode pengurutan dengan membagi elemen array menjadi dua bagian(bagian yang diurutkan dan bagian yang belum diurutkan). Algoritma ini akan memilih elemen dari bagian yang belum diurutkan lalu disisipkan ke dalam bagian yang diurutkan dalam posisi yang tepat. Elemen-elemen yang nilainya lebih besar akan bergeser ke kanan. Langkah akan terus berulang hingga semua elemen array terurutkan dengan benar.
+
+Contoh dalam kehidupan sehari-hari:
+Kita memiliki tumpukan buku dengan judul yang berbeda-beda. Saat menggunakan insertion sort, kita akan mengambil buku satu persatu lalu menyisipkannya ke dalam tumpukan buku yang telah diurutkan sesuai dengan urutan judul buku.
+
+Pseudocode:
+
+```C++
+procedure InsertionSort(A: daftar item yang dapat diurutkan)
+    n = panjang(A)
+    untuk i = 1 sampai n-1 lakukan
+        kunci = A[i]
+        j = i - 1
+        selama j >= 0 dan A[j] > kunci lakukan
+            A[j + 1] = A[j]
+            j = j - 1
+        akhir selama
+        A[j + 1] = kunci
+    end untuk
+end procedure
+```
+
+Contoh code sederhana:
+
+```C++
+#include <iostream>
+using namespace std;
+
+void insertionSort(int arr[], int n) {
+    for (int i = 1; i < n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+
+int main() {
+    int arr[] = {64, 25, 12, 22, 11};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    insertionSort(arr, n);
+    cout << "Array yang diurutkan menggunakan Insertion Sort: \n";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+    return 0;
+}
+```
 
 
+Pemilihan algoritma yang baik, benar, dan tepat sangat diperlukan dalam membuat suatu kode program. Pemilihan jenis algoritma ini akan disesuaikan dengan kebutuhan aplikasi serta data yang dimiliki. Semua jenis algoritma sorting ini memiliki keunggulan dan kekurangannya masing-masing sehingga perlu disesuaikan dengan kebutuhan.
 
 ## Guided 
 
