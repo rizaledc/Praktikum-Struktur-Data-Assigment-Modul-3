@@ -1,5 +1,5 @@
 #include <iostream> 
-
+// MEMBUAT PENGURUTAN ASCENDING
 using namespace std; 
 
 // Fungsi untuk mengurutkan baris menggunakan algoritma bubble sort
@@ -37,7 +37,7 @@ void print_array(double a[], int length) {
 // Fungsi utama program
 int main() { 
     int length = 5;  // Panjang baris
-    double a[] = {22.1, 15.3, 8.2, 33.21, 99,99};  // Inisialisasi baris bilangan double
+    double a[] = {18.1, 15.3, 5.2, 36.21, 101.5};  // Inisialisasi baris bilangan double
 
     // Mencetak isi baris sebelum pengurutan
     cout << "Urutan bilangan sebelum sorting: " << endl; 
