@@ -4,6 +4,19 @@
 
 using namespace std;
 
+void insertionSort(vector<char> &arr) {
+    int n = arr.size();
+    for (int i = 1; i < n; ++i) {
+        char key = arr[i];
+        int j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+
 int main() {
     int n;
     cout << "Masukkan panjang baris: ";
@@ -24,22 +37,22 @@ int main() {
     }
     cout << endl;
 
-    // Sorting karakter secara ascending
-    vector<char> ascending = characters;
-    sort(ascending.begin(), ascending.end());
+    // Mengurutkan karakter menggunakan Insertion Sort secara ascending (kecil ke besar)
+    insertionSort(characters);
 
-    // Sorting karakter secara descending
-    vector<char> descending = characters;
-    sort(descending.rbegin(), descending.rend());
-
-    // Menampilkan hasil sorting
-    cout << "\nHasil pengurutan secara ascending: ";
-    for (char c : ascending) {
+    // Menampilkan hasil pengurutan secara ascending (kecil ke besar)
+    cout << "\nHasil pengurutan secara ascending (kecil ke besar): ";
+    for (char c : characters) {
         cout << c << " ";
     }
 
-    cout << "\nHasil pengurutan secara descending: ";
-    for (char c : descending) {
+    // Mengurutkan karakter menggunakan Insertion Sort secara descending (besar ke kecil)
+    insertionSort(characters);
+    reverse(characters.begin(), characters.end());
+
+    // Menampilkan hasil pengurutan secara descending (besar ke kecil)
+    cout << "\nHasil pengurutan secara descending (besar ke kecil): ";
+    for (char c : characters) {
         cout << c << " ";
     }
 
