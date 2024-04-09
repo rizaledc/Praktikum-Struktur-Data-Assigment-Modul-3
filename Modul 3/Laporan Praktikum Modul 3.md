@@ -1,11 +1,10 @@
-# <h1 align="center">Laporan Praktikum Modul Array</h1>
+# <h1 align="center">Laporan Praktikum Modul Sorting</h1>
 <p align="center">Rizal Wahyu Pratama</p>
 <p align="center">2311110029</p>
 
 ## Tujuan Praktikum
 
-Dengan adanya praktikum ini, penulis telah menargetkan beberapa tujuan diantaranya:
-1. Mahasiswa dapat memahami dan menerapkan beberapa algoritma sorting dalam menyelesaikan berbagai studi kasus.
+Dengan adanya praktikum ini, penulis telah menargetkan tujuan bahwa mahasiswa dapat memahami dan menerapkan beberapa algoritma sorting dalam menyelesaikan berbagai studi kasus.
    
 ## Dasar Teori
 
