@@ -330,13 +330,13 @@ Dengan hasil output kodingan di atas, kita mengetahui bahwa hasil dari cout pert
 #### Full Code Screenshot
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Guided01.png" alt="Alt Text">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/Guided1.png" alt="Alt Text">
 </p>
 
 #### Screenshot Output
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputGuided1.png" alt="Alt Text">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/OutGuid1.png" alt="Alt Text">
 </p>
 
 ### 2. Guided 2
@@ -473,13 +473,13 @@ Dengan hasil output kodingan di atas, kita mengetahui bahwa hasil dari cout pert
 #### Full Code Screenshot
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Guided02.png" alt="Alt Text">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/Guided2.png" alt="Alt Text">
 </p>
 
 #### Screenshot Output
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputGuided2.png" alt="Alt Text">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/OutGuid2.png" alt="Alt Text">
 </p>
 
 ## Unguided 
@@ -623,16 +623,16 @@ Pada output di terminal akan mengeluarkan nilai IPS mahasiswa yang belum di urut
 #### Full code Screenshot:
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Unguided01.png" alt="Alt Text">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/Unguided1.png" alt="Alt Text">
 </p>
 
 #### Screenshot Output
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputUnguided1.png" alt="Alt Text">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/OutUn1.png" alt="Alt Text">
 </p>
 
-### 2. Guided 2
+### 2. Unguided 2
 
 #### Pak RT memiliki 10 warga dengan nama: siti, situ, sana, ana, ani, caca, cici, dida, dodo, dan dadi. Supaya mudah dalam melakukan pencarian, Pak RT akan mengurutkan nama-nama tersebut sesuai dengan alfabet. Buatlah program untuk membantu Pak RT dengan menggunakan algoritma Bubble Sort!
 
@@ -765,16 +765,16 @@ Pada output di terminal akan mengeluarkan nama-nama dari warga yang belum di uru
 #### Full code Screenshot:
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Unguided02.png">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/Unguided2.png" alt="Alt Text">
 </p>
 
 #### Screenshot Output
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputUnguided2.png">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/OutUn2.png" alt="Alt Text">
 </p>
 
-### 3. Guided 3
+### 3. Unguided 3
 
 #### Buatlah program yang meminta user menginputkan suatu bilangan n dan meminta user untuk menginputkan sejumlah n karakter. Kemudian program akan melakukan sorting secara menaik (ascending) dan menurun (descending)!
 
@@ -969,13 +969,13 @@ Pada output di atas, pertama pengguna akan diminta untuk memasukkan panjang dari
 #### Full code Screenshot:
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/Unguided3.png">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/Unguided3.png" alt="Alt Text">
 </p>
 
 #### Screenshot Output
 
 <p align="center">
-  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-2/blob/main/Modul%202/Screenshot%20In%20and%20Out/OutputUnguided3.png">
+  <img src="https://github.com/rizaledc/Praktikum-Struktur-Data-Assigment-Modul-3/blob/main/Modul%203/Screenshot%20Kode%20dan%20Output/OutUn3.png" alt="Alt Text">
 </p>
 
 ## Kesimpulan
